@@ -1,0 +1,51 @@
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class accountFrame extends JFrame
+{
+
+	public accountFrame()
+	{
+		
+	 setTitle("Bank Account");
+	 setBounds(100,100,600,400);
+	 setLayout(null);
+	 
+	 JLabel name = new JLabel("Name: ");
+	 name.setBounds(100, 10, 50, 50);
+	 add(name);
+	 
+	 JTextField nameAns = new JTextField();
+	 nameAns.setBounds(200,10,100,100);
+	 add(nameAns);
+	
+	 JLabel init = new JLabel("Initial Balance: ");
+	 init.setBounds(100, 210, 100, 100);
+	 add(init);
+	 
+	 JTextField bal = new JTextField();
+	 bal.setBounds(200,210,100,100);
+	 
+	 JLabel accType = new JLabel("Account Type: ");
+	 accType.setBounds(100,110,100,100);
+	 add(accType);
+	 
+	 String[] choice = {"Checking", "Savings"};
+	 JComboBox choose = new JComboBox(choice);
+	 choose.setBounds(200,135,80,50);
+	 add(choose);
+	 
+	 
+	}
+
+	public static void main(String[] args)
+	{
+		accountFrame frame = new accountFrame();
+		
+		
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}
