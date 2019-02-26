@@ -54,12 +54,12 @@ public class AccountFrame extends JFrame
 		 		{
 				  if(choose.getSelectedItem().equals ("Checking"))
 				  {
-					  CheckingAccount account = new CheckingAccount(nameAns.getText(),Integer.parseInt(bal.getText()),0,0,0);
+					  CheckingAccount account = new CheckingAccount(nameAns.getText(),Double.parseDouble(bal.getText()),0,0,0);
 					  accounts.add(account);
 				  }
 				  else if(choose.getSelectedItem().equals("Savings"))
 				  {
-					  SavingsAccount account = new SavingsAccount(nameAns.getText(), Integer.parseInt(bal.getText()),0,0,0);
+					  SavingsAccount account = new SavingsAccount(nameAns.getText(), Double.parseDouble(bal.getText()),0,0,0);
 				  }
 				  
 		 		}
